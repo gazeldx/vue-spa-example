@@ -24,10 +24,9 @@ export default {
   },
   methods: {
     doLogin () {
+      // TODO: Should show message if login failed.
       this.$http.post('http://localhost:3000/admin/sessions', { data: { attributes: this.agent } }, { headers: { 'Content-Type': 'application/vnd.api+json' } }).then((response) => {
         let data = JSON.parse(response.data).data
-        console.log(data)
-//        console.log(data.attributes.token)
         this.createCookie('token', data.attributes.token, 10)
         this.createCookie('administratorId', data.id, 10)
         window.location.href = '/admin/tickets'

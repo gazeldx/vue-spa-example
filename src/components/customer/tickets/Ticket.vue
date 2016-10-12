@@ -51,7 +51,6 @@ export default {
     },
     createTicketItem () {
       this.$http.post('http://localhost:3000/ticket_items', { data: { type: 'ticket_item', attributes: this.ticketItem } }, { headers: { 'X-Api-Key': this.readCookie('token'), 'Content-Type': 'application/vnd.api+json' } }).then((response) => {
-        console.log(response.data)
         this.$router.go(0)
       }, (response) => {
         console.log(response.data)
