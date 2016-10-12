@@ -19,7 +19,7 @@
 export default {
   data () {
     return {
-      ticket: {state: 'New', agent_id: 1}
+      ticket: { state: 'New' }
     }
   },
   methods: {

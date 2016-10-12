@@ -23,9 +23,7 @@ import TopTitle from './components/TopTitle'
 
 export default {
   data () {
-    return {
-      mainContent: ''
-    }
+    return {}
   },
   components: {
     TopTitle
