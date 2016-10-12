@@ -10,7 +10,7 @@
         <label class="sr-only" for="password">Password</label>
         <input v-model="agent.password" type="password" class="form-control" id="password" placeholder="Password">
       </div>
-      <button @click="doLogin" class="btn btn-default">Sign in</button>
+      <button @click="signIn" class="btn btn-default">Sign in</button>
     </div>
   </div>
 </template>
@@ -23,8 +23,8 @@ export default {
     }
   },
   methods: {
-    doLogin () {
-      // TODO: Should show message if login failed.
+    signIn () {
+      // TODO: Should show notice message if login failed.
       this.$http.post('http://localhost:3000/agent/sessions', { data: { attributes: this.agent } }, { headers: { 'Content-Type': 'application/vnd.api+json' } }).then((response) => {
         let data = JSON.parse(response.data).data
         this.createCookie('token', data.attributes.token, 10)

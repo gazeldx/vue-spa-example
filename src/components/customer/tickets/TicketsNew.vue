@@ -25,7 +25,6 @@ export default {
   methods: {
     createTicket: function() {
       this.$http.post('http://localhost:3000/tickets', { data: { type: 'ticket', attributes: this.ticket } }, { headers: { 'X-Api-Key': this.readCookie('token'), 'Content-Type': 'application/vnd.api+json' } }).then((response) => {
-        console.log(response.data)
         window.location.href = '/tickets'
       }, (response) => {
         console.log(response.data)

@@ -31,8 +31,14 @@ npm test
 
 # TODO
 * Use https://github.com/pugjs/pug for every *.vue files.
+
 * Add tests.
+
 * Replace http://localhost:3000 to computed function.
+
+* 'customer-id', 'agent-id' should be shown as 'customer-name' and 'agent-name'.
+
+* All date should be formatted.
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
