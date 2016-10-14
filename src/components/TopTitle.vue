@@ -10,6 +10,8 @@ export default {
     return {
       systemName: 'Customer Support Ticketing System'
     }
+  },
+  created () {
   }
 }
 </script>
