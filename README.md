@@ -1,4 +1,4 @@
-# ticketing
+# Vue-SPA-Webpack-example
 
 > Customer Support Ticketing SPA System with Vue.js and Webpack.
 
@@ -19,7 +19,7 @@ npm run dev
 npm run build
 
 # run unit tests
-cd /path/to/ticketing
+cd /path/to/vue-spa-example
 npm install -g karma-cli
 
 Download and install PhantomJS by following http://phantomjs.org/download.html
